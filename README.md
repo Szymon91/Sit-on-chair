@@ -1,5 +1,5 @@
 Projekt zrealizowany w ramach zajęć na kursie.
-Odwzrorowanie układu strony na podstawie pliku jpg.
+Odwzorowanie układu strony na podstawie pliku jpg.
 
 Technologie:
 
