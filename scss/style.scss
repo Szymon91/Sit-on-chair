@@ -107,6 +107,11 @@ html {
         color: #1b956c;
     }
 
+    img {
+        width: 470px;
+        height: 337px;
+    }
+
     div {
         max-width: 420px;
         padding-right: 80px;
@@ -154,7 +159,7 @@ html {
 
     .chairs__img {
         position: relative;
-        margin-top: 25px;
+        margin: 25px 5px 5px 5px;
 
         div.background {
             background-color: rgba(230, 230, 230, 0.4);
@@ -210,22 +215,22 @@ html {
 
 #third__section {
     background: #F1F1F1;
-    min-height: 500px;
     height: 725px;
     width: 100%;
 
     .third__plan__container {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
         padding-top: 75px;
 
         div.third__plan {
-            min-width: 200px;
             width: 329px;
             height: 500px;
             border: 2px solid #C2C2C2;
             position: relative;
             background-color: #F9F9F9;
+            margin: 0 5px 50px 5px;
 
             .circle {
                 width: 55px;
@@ -339,11 +344,13 @@ h2 {
 
 section#form {
     display: flex;
+    flex-wrap: wrap;
     width: 90%;
     margin: 0 auto;
 
     #form__left__side {
         flex-grow: 2;
+        min-width: 442px;
 
         h3 {
             margin: 0 0 30px 0;
@@ -368,6 +375,7 @@ section#form {
 
     #form__right__side {
         flex-grow: 1;
+        margin: 0 auto;
 
         form {
             position: relative;
@@ -436,5 +444,40 @@ footer {
                 font-weight: bold;
             }
         }
+    }
+}
+
+
+@media (max-width: 1033px) {
+    #second__section {
+        height: 550px;
+    }
+
+    #third__section {
+        height: 1235px;
+    }
+}
+
+@media (max-width: 694px) {
+    #second__section {
+        height: 840px;
+    }
+
+    #third__section {
+        height: 1780px;
+    }
+}
+
+@media (max-width: 858px) {
+    #form__right__side form {
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+@media (max-width: 560px) {
+    #form__right__side form {
+        margin-left: 40%;
+        transform: translate(-50%);
     }
 }
