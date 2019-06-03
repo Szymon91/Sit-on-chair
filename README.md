@@ -7,4 +7,4 @@ JS, HTML, SASS, Gulp
 
 to do:
 
-dodanie responsywności
+poprawa responsywności
