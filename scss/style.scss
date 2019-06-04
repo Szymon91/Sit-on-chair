@@ -11,6 +11,15 @@ html {
     font-size: 16px;
 }
 
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 .clearfix:after {
     content: '';
     display: block;
@@ -25,11 +34,9 @@ html {
 
 #header__container {
     margin: 0 auto 80px auto;
-    width: 100%;
     background-color: black;
     color: white;
     padding: 10px;
-
 
     .toggle {
         display: none;
@@ -69,8 +76,8 @@ html {
                     display: none;
                     list-style: none;
                     line-height: 1.5rem;
-                    top: 55px;
-                    min-width: 100px;
+                    top: 48px;
+                    width: 105px;
                     text-align: left;
                     padding: 5px 0 5px 20px;
                     font-size: 12px;
@@ -146,7 +153,7 @@ html {
             margin: 0 auto;
             color: white;
             background-color: $primaryColor;
-            padding: 17px 58px 17px 58px;
+            padding: 17px 58px;
             border-radius: 10px;
             font-size: 1rem;
             border: medium none;
@@ -165,7 +172,6 @@ html {
     justify-content: space-around;
     flex-wrap: wrap;
     height: 350px;
-    width: 100%;
 
     .chairs__img {
         position: relative;
@@ -182,7 +188,7 @@ html {
         p {
             position: absolute;
             top: 70px;
-            margin: 0 15px 0 15px;
+            margin: 0 15px;
             color: #a6a6a6;
             font-size: 0.8rem;
             line-height: 120%;
@@ -226,7 +232,6 @@ html {
 #third__section {
     background: #F1F1F1;
     height: 725px;
-    width: 100%;
 
     .third__plan__container {
         display: flex;
@@ -600,18 +605,18 @@ footer {
         }
 
         .triangle {
-            border-left: 15px solid transparent;
-            border-right: 15px solid transparent;
-            border-bottom: 15px solid #000;
-            top: 7px;
-            left: 90px;
-            transform: rotate(90deg);
+            border-left: 15px solid #000;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            top: 3px;
+            left: 95px;
+
         }
     }
 
     #first__section {
         button.see_more {
-            padding: 17px 12px 17px 12px;
+            padding: 17px 12px;
         }
     }
 
